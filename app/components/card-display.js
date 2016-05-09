@@ -8,8 +8,12 @@ export default Ember.Component.extend({
   },
   
   actions: {
-    toggleModal() {
-      this.toggleProperty('modalOpen');
-    }
+    closeModal() {
+      this.set('modalOpen', false);
+    },
+    
+    openModal() {
+      this.set('modalOpen', true);
+    },
   },
 });
