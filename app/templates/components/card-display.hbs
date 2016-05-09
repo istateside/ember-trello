@@ -1,1 +1,15 @@
-<h3>{{card.title}}</h3>
+<li class="card__wrapper">
+  <a href="#" {{action "toggleModal"}}>
+    <h3 class="card__title">{{title}}</h3>
+  </a>
+  
+  <div class="modal__wrapper">
+    <div class="modal__underlay" {{action "toggleModal"}}></div>
+    <div class="modal__inner-wrap">
+      <a href="#" class="modal__close" {{action "toggleModal"}}>Close</a>
+      {{input value=title}}
+      {{textarea value=description}}
+      <button {{action "cardSubmit"}}>Submit</button>
+    </div>
+  </div>
+</li>

@@ -1,0 +1,28 @@
+.modal {
+  &__wrapper {
+    transition: visibility 0s .4s, opacity .4s ease-in-out;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    
+    @at-root {
+      .modal-open & {
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s, opacity .4s;      
+      }
+    }
+  }
+  
+  &__underlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: .7;
+  }
+}

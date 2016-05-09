@@ -1,7 +1,8 @@
-{{list.title}}
-<ul>
-  {{#each cards as |card|}}
-    {{card-display card=card}}
-  {{/each}}
-</ul>
-  
+<div class="list__wrapper">
+  <h3>{{list.title}}</h3>
+  <ul>
+    {{#each list.cards as |card| }}
+      {{card-display title=card.title description=card.description}}
+    {{/each}}
+  </ul>
+</div>
