@@ -2,7 +2,7 @@
   <h3>{{list.title}}</h3>
   <ul>
     {{#each list.cards as |card| }}
-      {{card-display title=card.title description=card.description}}
+      {{card-display card=card title=card.title description=card.description}}
     {{/each}}
   </ul>
 </div>

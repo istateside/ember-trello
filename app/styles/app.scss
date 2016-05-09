@@ -28,8 +28,37 @@
   
   &__inner-wrap {
     position: absolute;
-    top: 50%;
+    top: 200px;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    transform: translateX(-250px);
+    width: 500px;
+    background: white;
+    border-radius: 2px;
+    padding: 30px;
+  }
+  
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  &__input {
+    display: block;
+    width: 100%;
+  }
+}
+
+.card {
+  &__wrapper {
+    opacity: 1;
+    transition: opacity .8s ease-in-out;
+    
+    @at-root {
+      .fading-out & {
+        opacity: 0;
+      }
+    }
   }
 }

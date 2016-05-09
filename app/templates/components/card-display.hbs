@@ -1,15 +1,7 @@
 <li class="card__wrapper">
   <a href="#" {{action "openModal"}}>
-    <h3 class="card__title">{{title}}</h3>
+    <h3 class="card__title">{{card.title}}</h3>
   </a>
-  
-  <div class="modal__wrapper">
-    <div class="modal__underlay" {{action "closeModal"}}></div>
-    <div class="modal__inner-wrap">
-      <a href="#" class="modal__close" {{action "closeModal"}}>Close</a>
-      {{input value=title}}
-      {{textarea value=description}}
-      <button {{action "cardSubmit"}}>Submit</button>
-    </div>
-  </div>
+
+  {{modal-display card=card modalOpen=modalOpen onConfirm=(action "deleteCard") onSubmit=(action "cardSubmit")}}
 </li>

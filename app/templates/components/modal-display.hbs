@@ -1,0 +1,19 @@
+<div class="modal__wrapper">
+  <div class="modal__underlay" {{action "closeModal"}}></div>
+  <div class="modal__inner-wrap">
+    <i class="fa fa-times modal__close" {{action "closeModal"}}></i>
+    <form class="modal__form" method="post">
+      <label class="input__wrapper">
+        <span class="input__text"></span>
+        {{input value=card.title class="modal__input modal__input--title input__field"}}
+      </label>
+      <label class="input__wrapper">
+        <span class="input__text">Description</span>
+        {{textarea value=card.description class="modal__input modal__input--desc input__field"}}
+      </label>
+      <button class="modal__input modal__input--submit" {{action "submitForm"}}>Submit</button>
+    </form>
+    
+    <button type="modal__input modal__input--delete" name="delete" {{action "openConfirm"}}>Delete?</button>
+  </div>
+</div>
