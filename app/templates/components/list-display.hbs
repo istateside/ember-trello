@@ -1,8 +1,7 @@
-<div class="list__wrapper">
-  <h3>{{list.title}}</h3>
-  <ul>
-    {{#each list.cards as |card| }}
-      {{card-display card=card title=card.title description=card.description}}
-    {{/each}}
-  </ul>
-</div>
+<h3 class="list__title">{{list.title}}</h3>
+<ul class="list__cards-area">
+  {{#each list.cards as |card| }}
+    {{card-display card=card title=card.title description=card.description}}
+  {{/each}}
+  <li class="card__wrapper"><a {{action 'addNewCard'}}>Add New Card</a></li>
+</ul>

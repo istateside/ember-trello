@@ -1,7 +1,8 @@
-<h2>Your Board</h2>
-<ul>
+<ul class="lists__wrapper">
   {{#each lists as |list|}}
     {{list-display list=list}}
   {{/each}}
+  
+  {{new-list-display onClick=(action 'addNewList')}}
 </ul>
   

@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  tagName: "li",
+  classNames: ['card__wrapper'],
   classNameBindings: ['modalOpen', 'fadingOut'],
   
   actions: {
