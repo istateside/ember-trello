@@ -6,12 +6,14 @@ A small, functional Trello clone made with Ember and Rails 5.
 
 You will need the following things properly installed on your computer.
 
-* Ruby 2.3.0
-* Bundler
-* Rails 5 (bundle install inside the api-backend directory)
 * Ember
 * NPM
 * Bower
+
+To use the Rails 5 API (optional), you'll need:
+* Ruby 2.3.0
+* Bundler
+* Rails 5 (bundle install inside the api-backend directory)
 
 ## Installation
 * `npm install`
