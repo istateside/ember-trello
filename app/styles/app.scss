@@ -125,6 +125,7 @@ header {
     left: 0;
     visibility: hidden;
     opacity: 0;
+    z-index: 100;
     
     @at-root {
       .modal-open & {
