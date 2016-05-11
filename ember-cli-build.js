@@ -5,7 +5,7 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
-    
+    tests: false,
     autoprefixer: {
       browsers: ['last 2 versions'],
     }
