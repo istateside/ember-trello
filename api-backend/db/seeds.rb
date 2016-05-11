@@ -8,15 +8,20 @@
 
 apartmentList = List.create(title: "New Apartment")
 
-Card.create(list: apartmentList, title: "Find new apartment", description: "Desc 1" )
-Card.create(list: apartmentList, title: "Rent Uhaul", description: "Desc2")
-Card.create(list: apartmentList, title: "Card 3", description: "desc3")
-Card.create(list: apartmentList, title: "Card 4", description: "desc4")
-Card.create(list: apartmentList, title: "Card 5", description: "desc5")
+Card.create(list: apartmentList, title: "Find new apartment", description: "Done!" )
+Card.create(list: apartmentList, title: "Rent Uhaul", description: "Done!")
+Card.create(list: apartmentList, title: "Call Time Warner", description: "Waiting on the shipment!")
+Card.create(list: apartmentList, title: "Turn on gas", description: "Whoops.")
+Card.create(list: apartmentList, title: "Carry all the boxes inside", description: "Ouch.")
   
 recordList = List.create(title: "Best Records of 2016")
   
 Card.create(list: recordList, title: "Shearwater - Jet Plane and Oxbow", description: "")
 Card.create(list: recordList, title: "The Dirty Nil - Higher Power", description: "")
 Card.create(list: recordList, title: "Brian Fallon - Painkillers", description: "")
-Card.create(list: recordList, title: "Camp Cope", description: "")
+Card.create(list: recordList, title: "Camp Cope - S/T", description: "")
+Card.create(list: recordList, title: "Beyoncé - Lemonade", description: "")
+Card.create(list: recordList, title: "David Bowie - Blackstar", description: "")
+Card.create(list: recordList, title: "Nada Surf - You Know Who You Are", description: "")
+Card.create(list: recordList, title: "Weezer - The White Album", description: "")
+Card.create(list: recordList, title: "Explosions in the Sky - The Wilderness", description: "")
