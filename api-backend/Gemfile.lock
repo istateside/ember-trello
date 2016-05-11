@@ -1,0 +1,151 @@
+GIT
+  remote: git://github.com/rails-api/active_model_serializers.git
+  revision: 7fc89ec393f85f518f93695163744ae7dca1be9d
+  tag: v0.10.0.rc4
+  specs:
+    active_model_serializers (0.10.0.rc4)
+      actionpack (>= 4.0)
+      activemodel (>= 4.0)
+      railties (>= 4.0)
+
+GIT
+  remote: git://github.com/rails/rails.git
+  revision: 6dec7645192bd89d81d47542255a346f93710830
+  specs:
+    actioncable (5.1.0.alpha)
+      actionpack (= 5.1.0.alpha)
+      nio4r (~> 1.2)
+      websocket-driver (~> 0.6.1)
+    actionmailer (5.1.0.alpha)
+      actionpack (= 5.1.0.alpha)
+      actionview (= 5.1.0.alpha)
+      activejob (= 5.1.0.alpha)
+      mail (~> 2.5, >= 2.5.4)
+      rails-dom-testing (~> 2.0)
+    actionpack (5.1.0.alpha)
+      actionview (= 5.1.0.alpha)
+      activesupport (= 5.1.0.alpha)
+      rack (~> 2.x)
+      rack-test (~> 0.6.3)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    actionview (5.1.0.alpha)
+      activesupport (= 5.1.0.alpha)
+      builder (~> 3.1)
+      erubis (~> 2.7.0)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    activejob (5.1.0.alpha)
+      activesupport (= 5.1.0.alpha)
+      globalid (>= 0.3.6)
+    activemodel (5.1.0.alpha)
+      activesupport (= 5.1.0.alpha)
+    activerecord (5.1.0.alpha)
+      activemodel (= 5.1.0.alpha)
+      activesupport (= 5.1.0.alpha)
+      arel (~> 7.0)
+    activesupport (5.1.0.alpha)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    rails (5.1.0.alpha)
+      actioncable (= 5.1.0.alpha)
+      actionmailer (= 5.1.0.alpha)
+      actionpack (= 5.1.0.alpha)
+      actionview (= 5.1.0.alpha)
+      activejob (= 5.1.0.alpha)
+      activemodel (= 5.1.0.alpha)
+      activerecord (= 5.1.0.alpha)
+      activesupport (= 5.1.0.alpha)
+      bundler (>= 1.3.0, < 2.0)
+      railties (= 5.1.0.alpha)
+      sprockets-rails (>= 2.0.0)
+    railties (5.1.0.alpha)
+      actionpack (= 5.1.0.alpha)
+      activesupport (= 5.1.0.alpha)
+      method_source
+      rake (>= 0.8.7)
+      thor (>= 0.18.1, < 2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    arel (7.0.0)
+    builder (3.2.2)
+    byebug (8.2.5)
+    concurrent-ruby (1.0.2)
+    erubis (2.7.0)
+    ffi (1.9.10)
+    globalid (0.3.6)
+      activesupport (>= 4.1.0)
+    i18n (0.7.0)
+    json (1.8.3)
+    listen (3.0.7)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9.7)
+    loofah (2.0.3)
+      nokogiri (>= 1.5.9)
+    mail (2.6.4)
+      mime-types (>= 1.16, < 4)
+    method_source (0.8.2)
+    mime-types (3.0)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0221)
+    mini_portile2 (2.0.0)
+    minitest (5.8.4)
+    nio4r (1.2.1)
+    nokogiri (1.6.7.2)
+      mini_portile2 (~> 2.0.0.rc2)
+    puma (3.4.0)
+    rack (2.0.0.rc1)
+      json
+    rack-cors (0.4.0)
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    rails-dom-testing (2.0.0)
+      activesupport (>= 4.2.0, < 6.0)
+      nokogiri (~> 1.6.0)
+    rails-html-sanitizer (1.0.3)
+      loofah (~> 2.0)
+    rake (11.1.2)
+    rb-fsevent (0.9.7)
+    rb-inotify (0.9.7)
+      ffi (>= 0.5.0)
+    spring (1.7.1)
+    spring-watcher-listen (2.0.0)
+      listen (>= 2.7, < 4.0)
+      spring (~> 1.2)
+    sprockets (3.6.0)
+      concurrent-ruby (~> 1.0)
+      rack (> 1, < 3)
+    sprockets-rails (3.0.4)
+      actionpack (>= 4.0)
+      activesupport (>= 4.0)
+      sprockets (>= 3.0.0)
+    sqlite3 (1.3.11)
+    thor (0.19.1)
+    thread_safe (0.3.5)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+    websocket-driver (0.6.3)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  active_model_serializers!
+  byebug
+  listen (~> 3.0.5)
+  puma (~> 3.0)
+  rack-cors
+  rails!
+  spring
+  spring-watcher-listen (~> 2.0.0)
+  sqlite3
+  tzinfo-data
+
+BUNDLED WITH
+   1.11.2
