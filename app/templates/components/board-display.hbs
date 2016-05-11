@@ -1,6 +1,6 @@
 <ul class="lists__wrapper">
   {{#each lists as |list|}}
-    {{list-display list=list}}
+    {{list-display list=list cards= list.cardIds}}
   {{/each}}
   
   {{new-list-display onClick=(action 'addNewList')}}

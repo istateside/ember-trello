@@ -2,8 +2,5 @@
   <h3>Tiny Trello - Your Board</h3>
 </header>
 <div class="page-wrap">  
-  {{!-- {{board-display lists=model.lists}} --}}
-  {{#each model as list}}
-    <li>TEST:{{list.title}}</li>
-  {{/each}}
+  {{board-display lists=model createList=(action 'createList')}}
 </div>

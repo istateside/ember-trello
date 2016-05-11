@@ -46,6 +46,7 @@ header {
 
 .lists__wrapper {
   display: block;
+  white-space: nowrap;
 }
 
 .list {
@@ -55,33 +56,62 @@ header {
     background: lightgray;
     border-radius: 5px;
     padding: 20px 8px;
-    margin-left: 30px;
+    margin: 0 15px;
     width: 240px;
+    white-space: normal;
     
     &:first-child {
       margin-left: 0;
     }
   }
   
+  &__title,
+  &__edit {
+    display: inline-block;
+  }
+  
   &__title {
     margin-top: 0;
     font-size: 14px;
     text-transform: uppercase;
+    
+    &--input {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+  
+  &__edit {
+    float: right;
   }
 }
 
 .card {
   &__wrapper {
-    background: $white;
-    
+    background: $white;    
+    border-radius: 5px;
     opacity: 1;
     transition: opacity .8s ease-in-out;
+    margin: 25px 0;
+    padding: 4px;
     
     @at-root {
       .fading-out & {
         opacity: 0;
       }
     }
+    
+    &:first-child {
+      margin-top: 10px;
+    }
+  }
+  
+  &__link {
+    text-decoration: none;
+  }
+  
+  &__title {
+    margin: 0;
   }
 }
 
@@ -134,5 +164,54 @@ header {
   &__input {
     display: block;
     width: 100%;
+    
+    &--submit,
+    &--delete {
+      margin-top: 20px;
+      border-radius: 6px 6px 0 0;
+      background: green;
+      color: $white;
+      border: 0;
+      padding: 10px 5px;
+      text-transform: uppercase;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    &--delete {
+      background: red;
+      border-radius: 0 0 6px 6px;
+      font-size: 10px;
+      margin-top: 0;
+      padding: 5px;
+    }
   }
+}
+
+.input {
+  &__wrapper {
+    margin: 6px 0;
+  }
+  
+  &__text {
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+}
+
+.new-list__button {
+  color: white;
+  font: 20px/24px "Lato";
+  text-decoration: none;
+  margin-top: 30px;
+  display: inline-block;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background: $blue;
+  padding: 10px;
+}
+
+.new-card__button {
+  cursor: pointer;
 }

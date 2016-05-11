@@ -1,5 +1,5 @@
-<a href="#" {{action "openModal"}}>
+<a class="card__link" href="#" {{action "openModal"}}>
   <h3 class="card__title">{{card.title}}</h3>
 </a>
 
-{{modal-display card=card modalOpen=modalOpen onConfirm=(action "deleteCard") onSubmit=(action "cardSubmit")}}
+{{modal-display card=card modalOpen=modalOpen onConfirm=(action "deleteThisCard") onSubmit=(action "cardSubmit") list=list}}

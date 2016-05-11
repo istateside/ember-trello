@@ -11,15 +11,11 @@ export default Ember.Component.extend({
     },
     
     cardSubmit() {
-      this.get('card')
-      console.log('card submit', arguments);
+      this.set('modalOpen', false);
     },
     
-    deleteCard() {
-      this.set('fadingOut', true);
-      setTimeout(function() {
-        this.destroy();
-      }.bind(this), 800);
+    deleteThisCard() {
+      this.get('deleteCard')();
     },
   },
 });
